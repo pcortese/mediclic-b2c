@@ -1,5 +1,5 @@
 // Bootstrap setup
-@import '../vendor/bootstrap/scss/functions';
+@import 'vendor/bootstrap/scss/functions';
 
 // Front setup
 @import 'front/variables';
@@ -8,7 +8,7 @@
 @import 'user-variables';
 
 // Bootstrap core
-@import '../vendor/bootstrap/scss/bootstrap';
+@import 'vendor/bootstrap/scss/bootstrap';
 
 /*----------------------------------------------------------------------
   * Front - Responsive Website Template version v3.2.2
