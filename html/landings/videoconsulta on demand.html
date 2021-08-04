@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Mediclic | D2C </title>
+  <title>Videoconsulta on demand</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -15,18 +15,60 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
-  <link rel="stylesheet" href="assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
-  <link rel="stylesheet" href="assets/vendor/aos/dist/aos.css">
-  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
+  <!-- Search Content -->
+  <div id="searchSlideDown" class="hs-unfold-content dropdown-unfold search-slide-down">
+    <form>
+      <!-- Input Group -->
+      <div class="input-group input-group-borderless search-slide-down-input bg-white rounded mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <input id="searchSlideDownControl" type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+        <div class="input-group-append">
+          <a class="js-hs-search-unfold-invoker input-group-text" href="javascript:;"
+             data-hs-unfold-options='{
+               "target": "#searchSlideDown",
+               "type": "css-animation",
+               "animationIn": "fadeIn search-slide-down-show",
+               "animationOut": "fadeOutUp",
+               "cssAnimatedClass": null,
+               "hasOverlay": true,
+               "overlayClass": ".search-slide-down-bg-overlay",
+               "overlayStyles": {
+                 "background": "rgba(33, 50, 91, .7)"
+               },
+               "duration": 800,
+               "hideOnScroll": false
+             }'>
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <!-- End Input Group -->
+
+      <!-- Suggestions Content -->
+      <div class="rounded bg-white search-slide-down-suggestions py-3 px-5">
+        <ul class="list-unstyled list-sm-article mb-0">
+          <li><a href="../pages/about-agency.html">About Front</a></li>
+          <li><a href="javascript:;">Getting Started</a></li>
+          <li><a href="../../documentation/index.html">Documentation</a></li>
+        </ul>
+      </div>
+      <!-- End Suggestions Content -->
+    </form>
+  </div>
+  <!-- End Search Content -->
+
+   <!-- ========== HEADER ========== -->
 <header id="header" class="header">
   <!-- Search -->
   <div id="searchPushTop" class="search-push-top">
@@ -247,7 +289,7 @@
         <nav class="js-mega-menu navbar navbar-expand-lg">
           <!-- Logo -->
           <a class="navbar-brand" href="index.html" aria-label="Front">
-            <img src="assets/svg/logos/Logo_Mediclic-01.svg" alt="Mediclic">
+            <img src="../../assets/svg/logos/Logo_Mediclic-01.svg" alt="Mediclic">
           </a>
           <!-- End Logo -->
   
@@ -312,626 +354,215 @@
   </header>
   <!-- ========== END HEADER ========== -->
 
-<!-- ========== SECONDARY CONTENTS ========== -->
-<!-- Account Sidebar Navigation -->
-<aside id="sidebarContent" class="hs-unfold-content sidebar">
-  <div class="sidebar-scroller">
-    <div class="sidebar-container">
-      <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
-        <!-- Toggle Button -->
-        <div class="d-flex justify-content-end align-items-center pt-4 px-4">
-          <div class="hs-unfold">
-            <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary" href="javascript:;"
-               data-hs-unfold-options='{
-                "target": "#sidebarContent",
-                "type": "css-animation",
-                "animationIn": "fadeInRight",
-                "animationOut": "fadeOutRight",
-                "hasOverlay": "rgba(55, 125, 255, 0.1)",
-                "smartPositionOff": true
-               }'>
-              <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-              </svg>
-             </a>
-          </div>
-        </div>
-        <!-- End Toggle Button -->
-
-        <!-- Content -->
-        <div class="scrollbar sidebar-body">
-          <div class="sidebar-content py-4 px-7">
-            <form class="js-validate">
-              <!-- Login -->
-              <div id="login">
-                <!-- Title -->
-                <div class="text-center mb-7">
-                  <h3 class="mb-0">Sign In to Front</h3>
-                  <p>Login to manage your account.</p>
-                </div>
-                <!-- End Title -->
-
-                <!-- Input Group -->
-                <div class="js-form-message mb-4">
-                  <label class="input-label">Email</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email" aria-label="Email" required
-                           data-msg="Please enter a valid email address.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <!-- Input Group -->
-                <div class="js-form-message mb-3">
-                  <label class="input-label">Password</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="password" class="form-control" name="password" id="signinPassword" placeholder="Password" aria-label="Password" required
-                           data-msg="Your password is invalid. Please try again.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <div class="d-flex justify-content-end mb-4">
-                  <a class="js-animation-link small link-underline" href="javascript:;"
-                     data-hs-show-animation-options='{
-                       "targetSelector": "#forgotPassword",
-                       "groupName": "idForm",
-                       "animationType": "css-animation",
-                       "animationIn": "slideInUp",
-                       "duration": 400
-                     }'>Forgot Password?</a>
-                </div>
-
-                <div class="mb-3">
-                  <button type="submit" class="btn btn-sm btn-primary btn-block">Sign In</button>
-                </div>
-
-                <div class="text-center mb-3">
-                  <span class="divider divider-xs divider-text">OR</span>
-                </div>
-
-                <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
-                  <span class="d-flex justify-content-center align-items-center">
-                    <img class="mr-2" src="../../assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
-                    Sign In with Google
-                  </span>
-                </a>
-
-                <div class="text-center">
-                  <span class="small text-muted">Do not have an account?</span>
-                  <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                     data-hs-show-animation-options='{
-                       "targetSelector": "#signup",
-                       "groupName": "idForm",
-                       "animationType": "css-animation",
-                       "animationIn": "slideInUp",
-                       "duration": 400
-                     }'>Sign Up
-                  </a>
-                </div>
-              </div>
-
-              <!-- Signup -->
-              <div id="signup" style="display: none; opacity: 0;">
-                <!-- Title -->
-                <div class="text-center mb-7">
-                  <h3 class="mb-0">Create your account</h3>
-                  <p>Fill out the form to get started.</p>
-                </div>
-                <!-- End Title -->
-
-                <!-- Input Group -->
-                <div class="js-form-message mb-4">
-                  <label class="input-label">Email</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="email" class="form-control" name="email" id="signupEmail" placeholder="Email" aria-label="Email" required
-                           data-msg="Please enter a valid email address.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <!-- Input Group -->
-                <div class="js-form-message mb-4">
-                  <label class="input-label">Password</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="password" class="form-control" name="password" id="signupPassword" placeholder="Password" aria-label="Password" required
-                           data-msg="Your password is invalid. Please try again.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <!-- Input Group -->
-                <div class="js-form-message mb-4">
-                  <label class="input-label">Confirm Password</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="password" class="form-control" name="confirmPassword" id="signupConfirmPassword" placeholder="Confirm Password" aria-label="Confirm Password" required
-                           data-msg="Password does not match the confirm password.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <div class="mb-3">
-                  <button type="submit" class="btn btn-sm btn-primary btn-block">Sign Up</button>
-                </div>
-
-                <div class="text-center mb-3">
-                  <span class="divider divider-xs divider-text">OR</span>
-                </div>
-
-                <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
-                  <span class="d-flex justify-content-center align-items-center">
-                    <img class="mr-2" src="../../assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
-                    Sign Up with Google
-                  </span>
-                </a>
-
-                <div class="text-center">
-                  <span class="small text-muted">Already have an account?</span>
-                  <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                     data-hs-show-animation-options='{
-                       "targetSelector": "#login",
-                       "groupName": "idForm",
-                       "animationType": "css-animation",
-                       "animationIn": "slideInUp",
-                       "duration": 400
-                     }'>Sign In
-                  </a>
-                </div>
-              </div>
-              <!-- End Signup -->
-
-              <!-- Forgot Password -->
-              <div id="forgotPassword" style="display: none; opacity: 0;">
-                <!-- Title -->
-                <div class="text-center mb-7">
-                  <h3 class="mb-0">Recover password</h3>
-                  <p>Instructions will be sent to you.</p>
-                </div>
-                <!-- End Title -->
-
-                <!-- Input Group -->
-                <div class="js-form-message">
-                  <label class="sr-only" for="recoverEmail">Your email</label>
-                  <div class="input-group input-group-sm mb-2">
-                    <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" required
-                           data-msg="Please enter a valid email address.">
-                  </div>
-                </div>
-                <!-- End Input Group -->
-
-                <div class="mb-3">
-                  <button type="submit" class="btn btn-sm btn-primary btn-block">Recover Password</button>
-                </div>
-
-                <div class="text-center mb-4">
-                  <span class="small text-muted">Remember your password?</span>
-                  <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                     data-hs-show-animation-options='{
-                       "targetSelector": "#login",
-                       "groupName": "idForm",
-                       "animationType": "css-animation",
-                       "animationIn": "slideInUp",
-                       "duration": 400
-                     }'>Login
-                  </a>
-                </div>
-              </div>
-              <!-- End Forgot Password -->
-            </form>
-          </div>
-        </div>
-        <!-- End Content -->
-      </div>
-
-      <!-- Footer -->
-      <footer class="sidebar-footer border-top py-2 px-7">
-        <ul class="nav nav-sm">
-          <li class="nav-item">
-            <a class="nav-link pl-0" href="#">Privacy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Terms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-info-circle la-lg"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
-      <!-- End Footer -->
-    </div>
-  </div>
-</aside>
-<!-- End Account Sidebar Navigation -->
-<!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="position-relative">
-      <!-- Main Slider -->
-      <div id="heroSlider" class="js-slick-carousel slick"
-           data-hs-slick-carousel-options='{
-            "prevArrow": "<span class=\"fas fa-arrow-left slick-arrow slick-arrow-soft-white slick-arrow-left slick-arrow-centered-y rounded-circle ml-sm-2 ml-xl-4\"></span>",
-            "nextArrow": "<span class=\"fas fa-arrow-right slick-arrow slick-arrow-soft-white slick-arrow-right slick-arrow-centered-y rounded-circle mr-sm-2 mr-xl-4\"></span>",
-            "fade": true,
-            "infinite": true,
-            "autoplay": true,
-            "autoplaySpeed": 7000,
-            "dots": true,
-            "dotsAsProgressLine": true,
-            "dotsClass": "slick-dots mt-n4"
-         }'>
+<div class="bg-primary bg-img-hero" style="background-image: url(../../assets/svg/components/abstract-shapes-5.svg);">
+  <div class="container space-2 space-lg-3">
+    <div class="w-lg-65 text-center mx-lg-auto">
+      <span class="badge badge-soft-light badge-pill font-size-1 py-3 px-4 mb-3">Telemedicina</span>
+      <h1 class="text-white mb-0">Videoconsulta on demand</h1>
+    </div>
+  </div>
+</div>
+<!-- End Hero Section -->
 
-        <div class="js-slide d-flex gradient-x-overlay-sm-navy bg-img-hero min-h-450rem" style="background-image: url(assets/img/1920x400/img3.png);">
-          <!-- News Block -->
-          <div class="container d-flex align-items-center min-h-450rem">
-            <div class="w-lg-60 mr-5">
+   <!-- Features Section -->
+<div class="container space-2">
+  <div class="row align-items-lg-center">
+    <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+      <div class="mb-5">
+        <h2 class="mb-3">¿Qué puedo hacer en una videoconsulta médica?</h2>
+        <p>Ingresa a nuestra plataforma y el médico te atenderá en minutos.</p>
+      </div>
 
-              <div class="mb-5">
-                <h3 class="h1 font-weight-bold text-white"
-                    data-hs-slick-carousel-animation="fadeInUp"
-                    data-hs-slick-carousel-animation-delay="150">La forma de cuidarnos cambió</h3>
-                    <p class="h4 font-weight-normal text-white" data-hs-slick-carousel-animation="fadeInUp" data-hs-slick-carousel-animation-delay="150">Desde ahora puedes reembolsar tu videoconsulta en tu Isapre<br> o recibir un copago si utilizas Fonasa.</p>
-              </div>
-              <a class="btn btn-primary btn-wide transition-3d-hover" href="single-article.html"
-                 data-hs-slick-carousel-animation="fadeInUp"
-                 data-hs-slick-carousel-animation-delay="300">Saber más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-            </div>
-          </div>
-          <!-- End News Block -->
-        </div>
-
-        <div class="js-slide d-flex gradient-x-overlay-sm-navy bg-img-hero min-h-450rem" style="background-image: url(assets/img/1920x400/img2.png);">
-          <!-- News Block -->
-          <div class="container d-flex align-items-center min-h-450rem">
-            <div class="w-lg-60 mr-5">
-
-              <div class="mb-5">
-                <h3 class="h1 font-weight-bold text-white"
-                    data-hs-slick-carousel-animation="fadeInUp"
-                    data-hs-slick-carousel-animation-delay="150">La forma de cuidarnos cambió</h3>
-                    <p class="h4 font-weight-normal text-white" data-hs-slick-carousel-animation="fadeInUp" data-hs-slick-carousel-animation-delay="150">Desde ahora puedes reembolsar tu videoconsulta en tu Isapre<br> o recibir un copago si utilizas Fonasa.</p>
-              </div>
-              <a class="btn btn-primary btn-wide transition-3d-hover" href="single-article.html"
-                 data-hs-slick-carousel-animation="fadeInUp"
-                 data-hs-slick-carousel-animation-delay="300">Saber más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-            </div>
-          </div>
-          <!-- End News Block -->
-        </div>
-
-        <div class="js-slide d-flex gradient-x-overlay-sm-navy bg-img-hero min-h-450rem" style="background-image: url(assets/img/1920x400/img4.png);">
-          <!-- News Block -->
-          <div class="container d-flex align-items-center min-h-450rem">
-            <div class="w-lg-60 mr-5">
-
-              <div class="mb-5">
-                <h3 class="h1 font-weight-bold text-white"
-                    data-hs-slick-carousel-animation="fadeInUp"
-                    data-hs-slick-carousel-animation-delay="150">La forma de cuidarnos cambió</h3>
-                    <p class="h4 font-weight-normal text-white" data-hs-slick-carousel-animation="fadeInUp" data-hs-slick-carousel-animation-delay="150">Desde ahora puedes reembolsar tu videoconsulta en tu Isapre<br> o recibir un copago si utilizas Fonasa.</p>
-              </div>
-              <a class="btn btn-primary btn-wide transition-3d-hover" href="single-article.html"
-                 data-hs-slick-carousel-animation="fadeInUp"
-                 data-hs-slick-carousel-animation-delay="300">Saber más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-            </div>
-          </div>
-          <!-- End News Block -->
+      <!-- Info -->
+      <div class="media pb-3">
+        <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+          <i class="fas fa-check"></i>
+        </span>
+        <div class="media-body">
+          <p class="text-dark mb-0">Solicitar recetas médicas, órdenes de exámenes, lectura de resultados, segundas opiniones médicas, certificados, recetas magistrales y licencias médicas</p>
         </div>
       </div>
-      <!-- End Main Slider -->
+      <div class="media py-3">
+        <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+          <i class="fas fa-check"></i>
+        </span>
+        <div class="media-body">
+          <p class="text-dark mb-0">Adjuntar archivos para que el doctor vea en tiempo real</p>
+        </div>
+      </div>
+      <div class="media pt-3">
+        <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+          <i class="fas fa-check"></i>
+        </span>
+        <div class="media-body">
+          <p class="text-dark mb-0">En caso que antes midas tus signos vitales desde la app, el doctor podrá revisarlos y dar continuidad a un diagnóstico</p>
+        </div>
+      </div>
+      <!-- End Info -->
+    </div>
 
- <!-- Bloques características -->
- <div class="bg-navy">
- <div class="container space-1">
+    <div class="col-lg-7 order-lg-1">
+      <!-- Card Block -->
+      <div class="pr-lg-4">
+        <div class="card shadow-none bg-soft-primary text-indigo text-center w-lg-75 overflow-hidden pt-9 px-5 mx-lg-auto">
+          <div class="px-5 mb-5">
+            <h3>Obtén una consulta con médicos generales de manera inmediata</h3> 
+          </div>
+
+          <!-- Device Mockup -->
+          <div class="device device-half-iphone-x w-85 mx-auto">
+            <img class="device-half-iphone-x-frame" src="../../assets/svg/components/half-iphone-x.svg" alt="Image Description">
+            <img class="device-half-iphone-x-screen" src="../../assets/img/407x472/img7.jpg" alt="Image Description">
+          </div>
+          <!-- End Device Mockup -->
+        </div>
+      </div>
+      <!-- End Card Block -->
+    </div>
+  </div>
+</div>
+<!-- End Features Section -->
+
+<!-- Stats Section -->
+<div class="container space-2">
+  <div class="row justify-content-lg-center">
+    <div class="col-md-4 mb-7 mb-lg-0">
+      <!-- Stats -->
+      <div class="text-center px-md-3 px-lg-7">
+        <figure class="mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
+            <path fill="#FFC107" d="M36.8,14.6L42,25.3c0,0.2,0.2,0.2,0.3,0.3L54,27.2c0.3,0,0.5,0.5,0.3,0.8l-8.5,8.2c-0.2,0.2-0.2,0.3-0.2,0.5
+              l2,11.7c0,0.3-0.3,0.7-0.7,0.5l-10.5-5.6c-0.2,0-0.3,0-0.5,0l-10.5,5.6c-0.3,0.2-0.8-0.2-0.7-0.5l2-11.7c0-0.2,0-0.3-0.2-0.5
+              L18,28.1c-0.3-0.3-0.2-0.8,0.3-0.8L30,25.6c0.2,0,0.3-0.2,0.3-0.3l5.3-10.7C36.1,14.2,36.6,14.2,36.8,14.6z"/>
+            <path opacity=".25" fill="#FFC107" d="M56,5.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
+              c0,0.2-0.2,0.2-0.2,0.2L56,13.6h-0.2L53,15.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2l-2.3-2.3V9.2l3.1-0.5c0,0,0,0,0.2,0l1.5-2.8
+              C55.8,5.7,55.8,5.7,56,5.9z"/>
+            <path opacity=".25" fill="#FFC107" d="M12.3,0.3l1.3,2.8c0,0,0,0,0.2,0l3,0.5c0.2,0,0.2,0.2,0,0.2l-2.1,2.1c0,0,0,0,0,0.2l0.5,3
+              c0,0.2-0.2,0.2-0.2,0.2l-2.6-1.5c0,0,0,0-0.2,0L9.5,9.2c-0.2,0-0.2,0-0.2-0.2l0.5-3c0,0,0,0,0-0.2L7.5,3.7V3.6l3-0.5c0,0,0,0,0.2,0
+              l1.3-2.8C12.1,0.3,12.3,0.3,12.3,0.3z"/>
+            <path opacity=".25" fill="#FFC107" d="M13.9,49.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
+              c0,0.2-0.2,0.2-0.2,0.2l-2.8-1.5h-0.2L11,59.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2L9,53.4v-0.2l3.1-0.5c0,0,0,0,0.2,0l1.3-2.8
+              C13.8,49.8,13.9,49.8,13.9,49.9z"/>
+            <path opacity=".25" fill="#FFC107" d="M60.8,53.5l1.6,3.1c0,0,0,0,0.2,0l3.5,0.5c0.2,0,0.2,0.2,0,0.3l-2.5,2.5c0,0,0,0,0,0.2l0.7,3.5
+              c0,0.2-0.2,0.2-0.2,0.2l-3.1-1.6h-0.2l-3.1,1.6c-0.2,0-0.2,0-0.2-0.2l0.7-3.5v-0.2l-2.5-2.5c-0.2-0.2,0-0.2,0-0.3l3.5-0.5h0.2
+              l1.6-3.1C60.4,53.4,60.6,53.4,60.8,53.5z"/>
+          </svg>
+        </figure>
+        <p class="mb-0"><span class="text-dark font-weight-bold">4.83 de 5 estrellas</span> <br> en más de 2000 reviews</p>
+      </div>
+      <!-- End Stats -->
+    </div>
+
+    <div class="col-md-4 mb-7 mb-lg-0">
+      <!-- Stats -->
+      <div class="text-center column-divider-md column-divider-20deg px-md-3 px-lg-7">
+        <figure class="mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
+            <defs>
+              <circle id="SVGID_1_" cx="50.9" cy="43.1" r="18.9"/>
+            </defs>
+            <clipPath id="SVGID_2_">
+              <use xlink:href="#SVGID_1_"/>
+            </clipPath>
+            <g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_2_);">
+              <image width="100" height="100" xlink:href="../../assets/img/100x100/img10.jpg" transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
+            </g>
+            <use xlink:href="#SVGID_1_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+            <defs>
+              <circle id="SVGID_3_" cx="34.6" cy="20.9" r="18.9"/>
+            </defs>
+            <clipPath id="SVGID_4_">
+              <use xlink:href="#SVGID_3_"/>
+            </clipPath>
+            <g style="clip-path:url(#SVGID_4_);">
+              <image width="100" height="100" xlink:href="../../assets/img/100x100/img3.jpg" transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
+            </g>
+            <use xlink:href="#SVGID_3_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+            <defs>
+              <circle id="SVGID_5_" cx="20.9" cy="43.1" r="18.9"/>
+            </defs>
+            <clipPath id="SVGID_6_">
+              <use xlink:href="#SVGID_5_"/>
+            </clipPath>
+            <g style="clip-path:url(#SVGID_6_);">
+              <image width="100" height="100" xlink:href="../../assets/img/100x100/img2.jpg" transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
+            </g>
+            <use xlink:href="#SVGID_5_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+          </svg>
+        </figure>
+        <p class=" mb-0">Tenemos <span class="text-dark font-weight-bold">soporte</span><br> en tiempo real</p>
+      </div>
+      <!-- End Stats -->
+    </div>
+
+    <div class="col-md-4">
+      <!-- Stats -->
+      <div class="text-center column-divider-md column-divider-20deg px-md-3 px-lg-7">
+        <figure class="mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="71" height="64" viewBox="0 0 71.7 64">
+            <path fill="none" stroke="#21325b" stroke-width="2" d="M47.9,1.3H20.1c-2,0-3.5,1.5-3.5,3.5v51.4c0,2,1.5,3.5,3.5,3.5h36.5c2,0,3.5-1.5,3.5-3.5v-8.6V21.2v-7.5
+              L47.9,1.3z"/>
+            <path fill="#21325b" d="M49.1,14.7c-1.1,0-1.8-0.9-1.8-1.8V2L60,14.7H49.1z"/>
+            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="21" x2="28" y2="21"/>
+            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="27.9" x2="28" y2="27.9"/>
+            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="34.8" x2="28" y2="34.8"/>
+            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="42" x2="28" y2="42"/>
+            <path opacity=".2" fill="#21325b" d="M17.1,56V10.2c0-1.4-1.1-2.5-2.5-2.5h-0.5c-1.4,0-2.5,1.1-2.5,2.5v51.1c0,1.4,1.1,2.5,2.5,2.5h2.9h34.7
+              c1.4,0,2.5-1.1,2.5-2.5v-0.5c0-1.4-1.1-2.5-2.5-2.5H19.5C18.1,58.4,17.1,57.4,17.1,56z"/>
+          </svg>
+        </figure>
+        <p class="mb-0"><span class="text-dark font-weight-bold">Médicos certificados</span><br> en la Superintendencia de Salud</p>
+      </div>
+      <!-- End Stats -->
+    </div>
+  </div>
+</div>
+<!-- End Stats Section -->
+    <br>
+<!-- Services Section -->
+<div class="container">
   <div class="row">
-    <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-5">
+    <div class="col-lg-6 mb-3 mb-lg-0">
       <!-- Card -->
-      <a class="card shadow-lg h-10 text-center transition-3d-hover bg-warning" href="html/landings/videoconsulta on demand.html">
-        <div class="card-body pt-1 px-1">
-          <figure class="avatar mx-auto mb-4">
-            <img class="avatar-img" src="assets/img/160x160/1-videoconsulta-on-demand.svg" alt="Videoconsulta médica">
-          </figure>
-          <h4 class="text-white">Videoconsulta<br>On Demand</h4>
+      <div class="card bg-primary text-white h-100 overflow-hidden p-5">
+        <div class="w-65 pr-2">
+          <h2 class="text-white">Regístrate</h2>
+          <p class="text-white">En menos de un minuto podrás contar nuestro staff médico.</p>
+          <a class="btn btn-sm btn-light transition-3d-hover" href="#">Crear cuenta <i class="fas fa-angle-right ml-1"></i></a>
         </div>
-      </a>
-      <!-- End Card -->  
-    </div>
-
-    <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-5">
-       <!-- Card -->
-       <a class="card shadow-lg h-10 text-center transition-3d-hover bg-warning" href="html/landings/especialidades médicas.html">
-        <div class="card-body pt-1 px-1">
-          <figure class="avatar mx-1 mb-4">
-            <img class="avatar-img" src="assets/img/160x160/2.especialidades.svg
-            " alt="Especialidades médicas">
-          </figure>
-          <h4 class="text-white">Especialidades<br> médicas</h4>
+        <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4">
+          <img class="img-fluid" src="../../assets/img/mockups/img15.png" alt="Image Description">
         </div>
-      </a>
+      </div>
       <!-- End Card -->
     </div>
 
-    <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-5">
+    <div class="col-lg-6">
       <!-- Card -->
-      <a class="card shadow h-10 text-center transition-3d-hover" href="https://www.mediclic.cl/landings/vitals/">
-        <div class="card-body pt-1 px-1">
-         <figure class="avatar mx-auto mb-4">
-           <img class="avatar-img" src="assets/img/160x160/3-mide-tus-signos.svg" alt="Mide tus signos vitales">
-         </figure>
-         <h4>Mide tus<br>signos vitales</h4>
-       </div>
-     </a>
-     <!-- End Card -->
-   </div>
-
-   <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-5">
-       <!-- Card -->
-       <a class="card shadow h-10 text-center transition-3d-hover" href="html/landings/Descarga app.html">
-        <div class="card-body pt-1 px-1">
-          <figure class="avatar mx-auto mb-4">
-            <img class="avatar-img" src="assets/img/160x160/4.descarga.svg" alt="Descarga app Mediclic">
-          </figure>
-          <h4>Descarga<br>la app</h4>
+      <div class="card bg-warning text-white h-100 overflow-hidden p-5">
+        <div class="w-65 pr-2">
+          <h2 class="text-white">Conéctate</h2>
+          <p class="text-white">No importa donde estés, si necesitas un médico general lo tienes.</p>
+          <a class="btn btn-sm btn-light transition-3d-hover" href="#">Ir a mi portal de salud <i class="fas fa-angle-right ml-1"></i></a>
         </div>
-      </a>
+        <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4">
+          <img class="img-fluid" src="../../assets/img/mockups/img12.png" alt="Image Description">
+        </div>
+      </div>
       <!-- End Card -->
     </div>
-
-    <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-0">
-      <!-- Card -->
-      <a class="card shadow h-10 text-center transition-3d-hover" href="#">
-       <div class="card-body pt-1 px-1">
-         <figure class="avatar mx-auto mb-4">
-           <img class="avatar-img" src="assets/img/160x160/5-examenes.svg" alt="Exámenes">
-         </figure>
-         <h4>Exámenes<br>a domicilio</h4>
-       </div>
-     </a>
-     <!-- End Card -->
-   </div>
-
-   <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-0">
-    <!-- Card -->
-    <a class="card shadow h-10 text-center transition-3d-hover" href="html/landings/Licencias médicas.html">
-     <div class="card-body pt-1 px-1">
-       <figure class="avatar mx-auto mb-4">
-         <img class="avatar-img" src="assets/img/160x160/6-licencias-medicas.svg" alt="Licencias médicas">
-       </figure>
-       <h4>Licencias<br>médicas</h4>
-     </div>
-   </a>
-   <!-- End Card -->
- </div>
-
- <div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-0">
-  <!-- Card -->
-  <a class="card shadow h-10 text-center transition-3d-hover" href="html/landings/Prescripciones y exámenes.html">
-   <div class="card-body pt-1 px-1">
-     <figure class="avatar mx-auto mb-4">
-       <img class="avatar-img" src="assets/img/160x160/7-prescripciones.svg" alt="Prescripciones médicas">
-     </figure>
-     <h4>Prescripciones<br>y exámenes</h4>
-   </div>
- </a>
- <!-- End Card -->
-</div>
-
-<div class="col-md-6 col-lg-3 mb-4 mb-md-5 mb-lg-0">
-  <!-- Card -->
-  <a class="card shadow h-10 text-center transition-3d-hover" href="html/landings/FAQ.html">
-   <div class="card-body pt-1 px-1">
-     <figure class="avatar mx-auto mb-4">
-       <img class="avatar-img" src="assets/img/160x160/8-preguntas.svg" alt="Preguntas frecuentes">
-     </figure>
-     <h4>Preguntas<br>frecuentes</h4>
-   </div>
- </a>
- <!-- End Card -->
-</div>   
-</div>
-</div>
-
-<!-- Fin bloques características -->
-
-    <!-- Bloque fonasa e isapre -->
-    <div class="bg-navy">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <!-- Card -->
-          <article class="card h-100 shadow-lg">
-            <div class="w-sm-65 p-4">
-              <h3>Revisa los tramos de <br>copago que tenemos para ti</h3>
-              <div class="mb-4">
-              </div>
-              <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="#">Saber más <i class="fas fa-angle-right ml-1"></i></a>
-            </div>
-            <div class="position-absolute bottom-1 right-0 w-sm-35 max-w-27rem">
-              <img class="img-fluid" src="assets/img/160x160/fonasa.png" alt="Image Description">
-            </div>
-          </article>
-          <!-- End Card -->
-        </div>
-
-        <div class="col-lg-6">
-          <!-- Card -->
-          <article class="card h-100 shadow-lg">
-            <div class="w-sm-65 p-4">
-              <h3>Reembolsa la videoconsulta<br>médica con tu Isapre</h3>
-              <div class="mb-4">
-              </div>
-              <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="#">Saber más <i class="fas fa-angle-right ml-1"></i></a>
-            </div>
-
-            <div class="position-absolute bottom-1 right-0 w-sm-35 max-w-27rem">
-              <img class="img-fluid" src="assets/img/160x160/isapres.png" alt="Image Description">
-            </div>
-          </article>
-          <!-- End Card -->
-        </div>
-      </div>
-      <br>
-    </div>
   </div>
 </div>
-    <!-- Fin Bloque fonasa e isapre  -->
-    <br>
-    <br>
+<!-- End Services Section -->
+<br>
+<br>
+<br>
 
-
-              
-    <!-- Entrads de blog -->
-    <div class="bg-white">
-      <div class="container-xl container-fluid space-1 space-md-2 px-4 px-md-8 px-lg-10">
-        <div class="px-3">
-
-          <!-- Slick Carousel -->
-          <div class="js-slick-carousel slick slick-equal-height ie-slick-equal-height slick-gutters-3"
-              data-hs-slick-carousel-options='{
-                 "prevArrow": "<span class=\"fas fa-arrow-left slick-arrow slick-arrow-primary-white slick-arrow-left slick-arrow-centered-y shadow-soft rounded-circle ml-n2\"></span>",
-                 "nextArrow": "<span class=\"fas fa-arrow-right slick-arrow slick-arrow-primary-white slick-arrow-right slick-arrow-centered-y shadow-soft rounded-circle mr-n2\"></span>",
-                 "slidesToShow": 3,
-                 "infinite": true,
-                 "dots": true,
-                 "dotsClass": "slick-pagination slick-pagination-white d-none mt-5",
-                 "responsive": [{
-                   "breakpoint": 992,
-                   "settings": {
-                     "slidesToShow": 2
-                     }
-                   }, {
-                   "breakpoint": 768,
-                   "settings": {
-                     "slidesToShow": 2
-                     }
-                   }, {
-                   "breakpoint": 554,
-                   "settings": {
-                     "slidesToShow": 1
-                   }
-                 }]
-               }'>
-            <div class="js-slide mb-3">
-              <!-- Card Info -->
-              <div class="card h-100">
-                <img class="card-img-top" src="assets/img/480x320/mediclic-live.jpg" alt="Mediclic Live - Salud mental en pandemia">
-                <div class="position-absolute top-0 left-0 pt-3 pl-3">
-                  <span class="badge badge-primary badge-pill">Salud Preventiva</span>
-                </div>
-                <div class="card-body">
-                  <h4>Mediclic Live - Salud mental en tiempos de pandemia</h4><br>
-                  <p class="mb-0">La salud mental durante la pandemia ha sido un ir y venir de emociones y situaciones que nos han puesto al límite.</p>
-                </div>
-                <div class="card-footer border-0 pt-0">
-                  <a class="font-weight-bold" href="http://mediclic-6333457.hs-sites.com/blog/mediclic-live-salud-mental-en-tiempos-de-pandemia">Leer más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </div>
-              </div>
-              <!-- End Card Info -->
-            </div>
-
-            <div class="js-slide mb-3">
-              <!-- Card Info -->
-              <div class="card h-100">
-                <img class="card-img-top" src="assets/img/480x320/entrevista-daniel-silberman.jpg" alt="Revive la entrevist a Daniel Silberman en Radio Universo">
-                <div class="position-absolute top-0 left-0 pt-3 pl-3">
-                  <span class="badge badge-primary badge-pill">Telemedicina</span>
-                </div>
-                <div class="card-body">
-                  <h4>Revive la entrevist a Daniel Silberman en Radio Universo</h4><br>
-                  <p class="mb-0">Producto de la pandemia, la telemedicina se expandió rápidamente en el país, pudiendo derribar barreras geográficas y tecnológicas.</p>
-                </div>
-                <div class="card-footer border-0 pt-0">
-                  <a class="font-weight-bold" href="http://mediclic-6333457.hs-sites.com/blog/entrevista-a-daniel-silberman-en-radio-universo">Leer más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </div>
-              </div>
-              <!-- End Card Info -->
-            </div>
-
-            <div class="js-slide mb-3">
-              <!-- Card Info -->
-              <div class="card h-100">
-                <img class="card-img-top" src="assets/img/480x320/especialidades.jpg" alt="especialidades médicas en la plataforma de telemedicina Mediclic">
-                <div class="position-absolute top-0 left-0 pt-3 pl-3">
-                  <span class="badge badge-primary badge-pill">Salud Preventiva</span>
-                </div>
-                <div class="card-body">
-                  <h4>Las especialidades médicas en la plataforma Mediclic</h4><br>
-                  <p class="mb-0">No es novedad que nuestro servicio se centra en medicina general, pero en vista de la demanda creciente mejoramos la experiencia.</p>
-                </div>
-                <div class="card-footer border-0 pt-0">
-                  <a class="font-weight-bold" href="http://mediclic-6333457.hs-sites.com/blog/2021/01/06/las-especialidades-medicas-en-mediclic">Leer más <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </div>
-              </div>
-              <!-- End Card Info -->
-            </div>
-
-            <div class="js-slide mb-3">
-              <!-- Card Info -->
-              <div class="card h-100">
-                <img class="card-img-top" src="assets/img/480x320/pharol.jpg" alt="Pharol, marketplace farmacéutico para comprar medicamentos">
-                <div class="position-absolute top-0 left-0 pt-3 pl-3">
-                  <span class="badge badge-primary badge-pill">Beneficios para pacientes</span>
-                </div>
-                <div class="card-body">
-                  <h4>Bienvenido Pharol</h4><br>
-                  <p class="mb-0">Bienvenido Pharol, un marketplace farmacéutico que viene a potenciar nuestro servicio de videoconsultas médicas. Tus medicamentos serán enviados a tu casa.</p>
-                </div>
-                <div class="card-footer border-0 pt-0">
-                  <a class="font-weight-bold" href="http://mediclic-6333457.hs-sites.com/blog/2020/04/20/bienvenido-pharol-un-marketplace-farmaceutico">Leer más<i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </div>
-              </div>
-              <!-- End Card Info -->
-            </div>
-          </div>
-          <!-- End Slick Carousel -->
-        </div>
-      </div>
-    </div>
-    <!-- Fin entradas de blog -->
-      
-<br><br>
-   <!-- Clients Section -->
-   <div class="bg-white">
-   <div class="container space-bottom-2 space-bottom-lg-1">
-  <!-- Divider -->
-  <div class="container">
-    <div class="w-lg-65 mx-lg-auto">
-      <hr class="my-0">
-    </div>
-  </div>
-  <!-- End Divider -->
-  <br><br>
-
-    <!-- Clients -->
-    <class class="row justify-content-sm-center text-center">
-      <div class="col-4 col-sm-2 mb-7">
-        <img class="min-w-21rem" src="assets/svg/clients-logo/corfo.svg" alt="Image Description">
-      </div>
-      <div class="col-4 col-sm-2 mb-7">
-        <img class="min-w-21rem" src="assets/svg/clients-logo/endeavor.svg" alt="Image Description">
-      </div>
-      <div class="col-4 col-sm-2 mb-7">
-        <img class="min-w-21rem" src="assets/svg/clients-logo/fonasa.svg" alt="Image Description">
-      </div>
-      <div class="col-4 col-sm-2 mb-7">
-        <img class="min-w-21rem" src="assets/svg/clients-logo/hipaa.svg" alt="Image Description">
-      </div>
-      <div class="col-4 col-sm-2 mb-7">
-        <img class="min-w-21rem" src="assets/svg/clients-logo/start-up.svg" alt="Image Description">
-      </div>
-      
-    </class>
-    <!-- End Clients -->
-  </div>
-</div>
-    <!-- End Stats Section -->
-  </main>
-  <!-- ========== END MAIN CONTENT ========== -->
-
-  <!-- ========== FOOTER ========== -->
+    <!-- ========== FOOTER ========== -->
   <footer class="bg-navy">
     <div class="container">
       <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
@@ -940,7 +571,7 @@
             <!-- Logo -->
             <div class="mb-4">
               <a href="index.html" aria-label="Front">
-                <img class="brand" src="assets/svg/logos/Logo_Mediclic-01.svg" alt="Logo">
+                <img class="brand" src="../../assets/svg/logos/Logo_Mediclic-01.svg" alt="Logo">
               </a>
             </div>
             <!-- End Logo -->

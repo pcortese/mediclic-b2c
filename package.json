@@ -5,9 +5,7 @@
   "main": "gulpfile.js",
   "author": "htmlstream",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "bootstrap-scripts build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
