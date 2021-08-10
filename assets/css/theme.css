@@ -3364,7 +3364,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #0052ea;
+  color: #98c11d;
   text-decoration: none;
 }
 
@@ -3373,7 +3373,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #8c98a4;
+  color: #98c11d;
   pointer-events: none;
 }
 
@@ -17244,14 +17244,14 @@ a.badge-soft-navy:hover, a.badge-soft-navy:focus {
 
 /* indigo soft */
 .btn-soft-indigo {
-  color: #2d1582;
+  color: #707070;
   background-color: rgba(45, 21, 130, 0.1);
   border-color: transparent;
 }
 
 .btn-soft-indigo:hover, .btn-soft-indigo:focus, .btn-soft-indigo:active, .btn-soft-indigo.active {
   color: #fff;
-  background-color: #2d1582;
+  background-color: #98c11d;
   box-shadow: 0 4px 11px rgba(45, 21, 130, 0.1);
 }
 
@@ -17975,7 +17975,7 @@ label.btn {
 }
 
 .card-collapse .card-body {
-  color: #677788;
+  color: #98c11d;
 }
 
 .card-btn {
@@ -17986,7 +17986,7 @@ label.btn {
 
 .card-btn-toggle {
   display: inline-block;
-  color: #377dff;
+  color: #98c11d;
 }
 
 .card-btn-toggle-default {
